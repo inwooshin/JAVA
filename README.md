@@ -4,9 +4,10 @@
    - [클래스](#클래스-생성-문법)
    - [import](#import)
    - [try catch](#try-catch-구문)
-   - [객체지향](#객체지향OOP)
+   - [객체지향](#객체지향oop)
    - [클래스 배열](#클래스-배열)
    - [추상 클래스](#추상-클래스)   
+   - [인터 페이스](#인터페이스)
 
 ## 클래스 생성 문법   
  - Scanner sc = new Scanner(연결해줄것);   
@@ -85,4 +86,32 @@ abstract class Player {
     abstract void stop();
 
 }
+</pre>   
+[목차로 돌아가기](#목차)   
+   
+## final   
+ - 재정의가 불가능한 것을 만드는 것이다. const 와 유사하다!
+ - 오버라이딩 되는 것을 막아준다.
+ - 클래스에 붙게되면 상속이 불가능한 완전한 클래스가 된다.
+<pre>
+
 </pre>
+   
+[목차로 돌아가기](#목차)   
+   
+## 인터페이스   
+ - 인터페이스는 추상과는 조금 다르다. 추상은 public void show 와 같은 public 을 사용한 함수를 선언해서 설계만을 하는 것이 아니라, 무조건 안의 내용을 구현해야한다. 그러나, 인터페이스는 그 내용을 헤더처럼 함수의 이름만을 선언하면된다. 역시 구현은 프로그램 내에서 받는다. 아래와 같이 인터페이스를 만들 수 있다. (추상은 implements 가 아닌 extends 를 사용)   
+<pre>
+public interface dog{
+   abstract void other();
+   public void show();
+}
+</pre>
+<pre>
+public class use_interface  implements  inter_face, inter_face2{ //요런식으로 다중 상속이 가능하다.
+
+</pre>   
+   
+※ 그렇다면 abstract 라고 앞에서 선언해준 함수와 public 이라고 쓴 함수의 차이는 무엇인가...?!  
+   
+[목차로 돌아가기](#목차)   
